@@ -14,7 +14,7 @@ float Meal::getPriceForGroup(const UserGroup& g) const {
 }
 
 std::ostream& operator<<(std::ostream& out, const Meal& m) {
-    out << "Ястие: " << m.name << ", Базова цена: " << m.basePrice << " лв.";
+    out << "Meal: " << m.name << ", Base Price: " << m.basePrice << " Leva.";
     return out;
 }
 

@@ -127,13 +127,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="loop.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
     <ClCompile Include="Meal.cpp" />
+    <ClCompile Include="order.cpp" />
     <ClCompile Include="Project_PE.cpp" />
     <ClCompile Include="User.cpp" />
     <ClCompile Include="UserGroup.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="loop.h" />
     <ClInclude Include="Meal.h" />
+    <ClInclude Include="order.h" />
     <ClInclude Include="User.h" />
     <ClInclude Include="UserGroup.h" />
   </ItemGroup>

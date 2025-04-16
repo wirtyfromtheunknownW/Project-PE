@@ -10,7 +10,7 @@ std::string UserGroup::getName() const { return name; }
 float UserGroup::getDiscountPercent() const { return discountPercent; }
 
 std::ostream& operator<<(std::ostream& out, const UserGroup& g) {
-    out << "Група: " << g.name << ", Отстъпка/надценка: " << g.discountPercent << "%";
+    out << "Group: " << g.name << ", Discount: " << g.discountPercent << "%";
     return out;
 }
 

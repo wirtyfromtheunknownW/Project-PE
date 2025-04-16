@@ -11,7 +11,7 @@ std::string User::getUsername() const { return username; }
 UserGroup User::getGroup() const { return group; }
 
 std::ostream& operator<<(std::ostream& out, const User& u) {
-    out << "Потребител: " << u.username << " (" << u.group.getName() << ")";
+    out << "User: " << u.username << " (" << u.group.getName() << ")";
     return out;
 }
 
@@ -30,6 +30,5 @@ User User::loadFromFile(std::ifstream& in, const std::vector<UserGroup>& groups)
             return User(username, g);
     }
 
-    // Ако не намерим групата, използваме празна
     return User(username, UserGroup(groupName, 0.0f));
 }
