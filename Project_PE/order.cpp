@@ -40,8 +40,8 @@ Order Order::loadFromFile(std::ifstream& in, const std::vector<User>& users, con
 }
 
 std::ostream& operator<<(std::ostream& out, const Order& o) {
-    out << "Поръчка: " << o.user.getUsername()
+    out << "Order: " << o.user.getUsername()
         << " -> " << o.meal.getName()
-        << " = " << o.finalPrice << " лв.";
+        << " = " << o.finalPrice << " Leva.";
     return out;
 }

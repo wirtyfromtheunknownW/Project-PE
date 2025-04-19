@@ -32,3 +32,4 @@ User User::loadFromFile(std::ifstream& in, const std::vector<UserGroup>& groups)
 
     return User(username, UserGroup(groupName, 0.0f));
 }
+

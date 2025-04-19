@@ -1,25 +1,15 @@
 #include <iostream>
-#include <vector>
-#include "UserGroup.h"
-#include "User.h"
-#include "Meal.h"
+#include <windows.h>   
+
 #include "loop.h"
 
 using namespace std;
 
 int main() {
-    vector<UserGroup> groups;
-    vector<User> users;
-    vector<Meal> meals;
-
-    //int choice;
+   
+    SetConsoleOutputCP(CP_UTF8);  // ????????? ?? ???????? ??????? ?? ?????????
+    std::ios::sync_with_stdio(false); // (?? ?????) ???????? cout
       runMenu();
-
-  /*  do {
-
-
-
-    } while (choice != 0);*/
 
     return 0;
 }

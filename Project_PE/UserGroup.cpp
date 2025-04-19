@@ -27,3 +27,5 @@ UserGroup UserGroup::loadFromFile(std::ifstream& in) {
     in.ignore(); // игнорира нов ред след float
     return UserGroup(name, discount);
 }
+
+
